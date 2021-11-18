@@ -1,0 +1,639 @@
+* {
+    margin     : 0;
+    padding    : 0;
+    box-sizing : border-box;
+}
+
+body {
+    display         : flex;
+    justify-content : center;
+    align-items     : center;
+    min-height      : 100vh;
+}
+
+.homerimgfather {
+    position : absolute;
+    z-index  : -10;
+}
+
+.homerimg {
+    width   : 300px;
+    display : none;
+}
+
+.homer {
+    position : relative;
+    width    : 250px;
+    height   : 250px;
+}
+
+.face {
+    position : relative;
+    width    : 250px;
+    height   : 250px;
+}
+
+.eye1 {
+    position      : absolute;
+    top           : 9%;
+    left          : 35%;
+
+    width         : 100px;
+    height        : 100px;
+    border        : 5px solid black;
+    border-radius : 100%;
+}
+
+.eye2pre {
+    position      : absolute;
+    top           : -15%;
+    left          : 68%;
+    width         : 140px;
+    height        : 140px;
+
+    border-radius : 100%;
+    transform     : rotate(5deg);
+    overflow      : hidden;
+}
+
+.eye2 {
+    position      : relative;
+    top           : 46%;
+    left          : -10%;
+
+    width         : 100px;
+    height        : 100px;
+    border        : 5px solid black;
+    border-radius : 100%;
+
+    transform     : rotate(20deg);
+}
+
+.eye3 {
+    position         : absolute;
+    top              : 27%;
+    left             : 79%;
+
+    width            : 16px;
+    height           : 16px;
+    background-color : black;
+    border-radius    : 100%;
+}
+
+.eye4 {
+    position         : absolute;
+    top              : 28%;
+    left             : 42%;
+
+    width            : 16px;
+    height           : 16px;
+    background-color : black;
+    border-radius    : 100%;
+}
+
+.nose1pre {
+    position      : relative;
+    top           : -3%;
+    left          : 70%;
+
+    width         : 150px;
+    height        : 150px;
+    border-radius : 100%;
+
+    transform     : rotate(20deg);
+
+    overflow      : hidden;
+}
+
+.nose1 {
+    position                   : absolute;
+    top                        : 75%;
+    left                       : -5%;
+
+    width                      : 100px;
+    height                     : 56px;
+
+    border                     : 5px solid black;
+    border-top-right-radius    : 33%;
+    border-top-left-radius     : 59%;
+    border-bottom-right-radius : 77%;
+
+    transform                  : rotate(-15deg);
+}
+
+.beard1pre {
+    position      : relative;
+    top           : -30%;
+    left          : 19%;
+    width         : 180px;
+    height        : 180px;
+    border-radius : 100%;
+
+    overflow      : hidden;
+}
+
+.beard1 {
+    position                   : absolute;
+    top                        : 32%;
+    left                       : 18%;
+    width                      : 145px;
+    height                     : 130px;
+    border                     : 5px solid black;
+    border-top-left-radius     : 183%;
+    border-top-right-radius    : 11%;
+    border-bottom-left-radius  : 121%;
+    border-bottom-right-radius : 118%;
+    border-right               : none;
+}
+
+.beard2pre {
+    position      : relative;
+    top           : -51%;
+    left          : 34%;
+    width         : 110px;
+    height        : 110px;
+    border-radius : 100%;
+    overflow      : hidden;
+}
+
+.beard2 {
+    position                   : absolute;
+    top                        : -34%;
+    left                       : -2%;
+    width                      : 111px;
+    height                     : 96px;
+    border                     : 5px solid black;
+    border-radius              : 100%;
+    border-top-left-radius     : 42%;
+    border-top-right-radius    : 29%;
+    border-bottom-left-radius  : 42%;
+    border-bottom-right-radius : 43%;
+    transform                  : rotate(10deg);
+
+}
+
+.beard3pre {
+    position : relative;
+    top      : -88%;
+    left     : 74%;
+    width    : 100px;
+    height   : 100px;
+
+    overflow : hidden;
+}
+
+.beard3 {
+    position      : absolute;
+    top           : -17%;
+    left          : -14%;
+    width         : 30px;
+    height        : 30px;
+    border        : 5px solid black;
+    border-radius : 100%;
+}
+
+.beard4pre {
+    position : relative;
+    top      : -164%;
+    left     : 80%;
+    width    : 100px;
+    height   : 61px;
+    overflow : hidden;
+
+}
+
+.beard4 {
+    position      : absolute;
+    top           : -178%;
+    left          : -302%;
+    width         : 350px;
+    height        : 350px;
+    border        : 4px solid black;
+    border-radius : 100%;
+    transform     : rotate(279deg);
+}
+
+.beard5pre {
+    position : relative;
+    top      : -195%;
+    left     : 98%;
+    width    : 100px;
+    height   : 100px;
+    /*border: 2px dashed red;*/
+    overflow : hidden;
+}
+
+.beard5 {
+    position                   : absolute;
+    top                        : 71.5%;
+    left                       : -23%;
+    width                      : 30px;
+    height                     : 30px;
+    border-radius              : 100%;
+    border                     : 4px solid black;
+    border-top-right-radius    : 57%;
+    border-top-left-radius     : 38%;
+    border-bottom-right-radius : 55%;
+    border-bottom-left-radius  : 47%;
+    transform                  : rotate(45deg);
+}
+
+.smile1pre {
+    position      : relative;
+    top           : -213%;
+    left          : 43%;
+    /*border        : 3px dashed red;*/
+    width         : 141px;
+    height        : 100px;
+    border-radius : 100%;
+    overflow      : hidden;
+}
+
+.smile1 {
+    position      : absolute;
+    top           : -191%;
+    left          : -27%;
+    width         : 234px;
+    height        : 250px;
+    border        : 5px solid black;
+    border-radius : 100%;
+    transform     : rotate(-36deg);
+}
+
+.smile2pre {
+    position      : relative;
+    top           : -275%;
+    left          : 16%;
+    /*border        : 3px solid red;*/
+    width         : 100px;
+    height        : 100px;
+    border-radius : 100%;
+    overflow      : hidden;
+}
+
+.smile2 {
+    position      : absolute;
+    top           : 72%;
+    left          : 69%;
+    width         : 37px;
+    height        : 37px;
+    border        : 5px solid black;
+    border-radius : 100%;
+    transform     : rotate(18deg);
+}
+
+
+.shirt1 {
+    position     : absolute;
+    top          : 82%;
+    left         : 64%;
+    border-right : 5px solid black;
+    width        : 100px;
+    height       : 43px;
+    transform    : rotate(113deg);
+}
+
+.shirt2 {
+    position     : absolute;
+    top          : 101%;
+    left         : 41%;
+    border-right : 5px solid black;
+    width        : 100px;
+    height       : 72px;
+    transform    : rotate(25deg);
+}
+
+.shirt3 {
+    position     : absolute;
+    top          : 112%;
+    left         : 46%;
+    border-right : 5px solid black;
+    width        : 100px;
+    height       : 72px;
+    transform    : rotate(-4deg);
+}
+
+.shirt4 {
+    position     : absolute;
+    top          : 139%;
+    left         : 39%;
+    border-right : 5px solid black;
+    width        : 100px;
+    height       : 34px;
+    transform    : rotate(-23deg);
+}
+
+.shirt5 {
+    position     : absolute;
+    top          : 126%;
+    left         : 29%;
+    border-right : 5px solid black;
+    width        : 100px;
+    height       : 70px;
+    transform    : rotate(-47deg);
+}
+
+.shirt6 {
+    position     : absolute;
+    top          : 108%;
+    left         : 9%;
+    border-right : 5px solid black;
+    width        : 100px;
+    height       : 72px;
+    transform    : rotate(21deg);
+}
+
+.shirt7 {
+    position     : absolute;
+    top          : 90%;
+    left         : -37%;
+    border-right : 5px solid black;
+    width        : 100px;
+    height       : 60px;
+    transform    : rotate(14deg);
+
+}
+
+.shirt8 {
+    position     : absolute;
+    top          : 71%;
+    left         : -16%;
+    border-right : 5px solid black;
+    width        : 100px;
+    height       : 25px;
+    transform    : rotate(76deg);
+}
+
+.shirt9prepre {
+    position : relative;
+    width    : 100px;
+    height   : 100px;
+}
+
+.shirt9pre {
+    position : relative;
+    top      : -58%;
+    left     : 13%;
+    width    : 121px;
+    height   : 100px;
+    overflow : hidden;
+    /*border: 2px dashed red;*/
+}
+
+.shirt9 {
+    position      : absolute;
+    top           : -497%;
+    left          : -104%;
+    border        : 4px solid black;
+    border-radius : 100%;
+    width         : 558px;
+    height        : 600px;
+}
+
+.shirt10prepre {
+    position : relative;
+    width    : 100px;
+    height   : 100px;
+}
+
+.shirt10pre {
+    position : relative;
+    top      : -59%;
+    left     : -13%;
+    width    : 121px;
+    height   : 100px;
+    overflow : hidden;
+
+}
+
+.shirt10 {
+    position      : absolute;
+    top           : -533%;
+    left          : -80%;
+    border        : 4px solid black;
+    border-radius : 100%;
+    width         : 558px;
+    height        : 600px;
+}
+
+.head1pre {
+    position : absolute;
+    top      : 103%;
+    left     : 59%;
+    width    : 100px;
+    height   : 75px;
+    overflow : hidden
+}
+
+.head1 {
+    position      : absolute;
+    top           : -178%;
+    left          : 19%;
+    width         : 300px;
+    height        : 300px;
+    border        : 4px solid black;
+    border-radius : 100%;
+}
+
+.head2pre {
+    position : absolute;
+    top      : 60%;
+    left     : 5%;
+    width    : 62px;
+    height   : 107px;
+    overflow : hidden;
+}
+
+.head2 {
+    position      : absolute;
+    top           : -12%;
+    left          : -116%;
+    border        : 4px solid black;
+    width         : 100px;
+    height        : 111px;
+    border-radius : 10%;
+    transform     : rotate(7deg);
+    border-bottom : none;
+}
+
+.earpre1 {
+    position  : absolute;
+    top       : 43%;
+    left      : 3%;
+    width     : 53px;
+    height    : 54px;
+
+    transform : rotate(-9deg);
+    overflow  : hidden;
+}
+
+.ear1 {
+    position                   : absolute;
+    top                        : -2%;
+    left                       : 34%;
+    width                      : 47px;
+    height                     : 54px;
+    border                     : 4px solid black;
+    border-radius              : 100%;
+    border-top-right-radius    : 320%;
+    border-top-left-radius     : 131%;
+    border-bottom-right-radius : 236%;
+    border-bottom-left-radius  : 318%;
+    transform                  : rotate(-228deg);
+}
+
+.earpre2 {
+    position : absolute;
+    top      : 30%;
+    left     : 6%;
+    width    : 53px;
+    height   : 54px;
+    overflow : hidden;
+}
+
+.ear2 {
+    position      : absolute;
+    top           : 81%;
+    left          : 22%;
+    width         : 33px;
+    height        : 40px;
+    border        : 4px solid black;
+    border-radius : 100%;
+}
+
+.ear3 {
+    position    : absolute;
+    top         : 50%;
+    left        : 16%;
+    border-left : 4px solid black;
+    width       : 15px;
+    height      : 15px;
+    transform   : rotate(24deg);
+}
+
+.lefthair1 {
+    position    : absolute;
+    top         : 27%;
+    left        : 5%;
+    border-left : 4px solid black;
+    width       : 15px;
+    height      : 44px;
+    transform   : rotate(1deg);
+}
+
+.lefthair2 {
+    position    : absolute;
+    top         : 25%;
+    left        : 16%;
+    border-left : 4px solid black;
+    width       : 15px;
+    height      : 47px;
+    transform   : rotate(9deg);
+}
+
+.lefthair3 {
+    position    : absolute;
+    top         : 25%;
+    left        : 10%;
+    border-left : 4px solid black;
+    width       : 15px;
+    height      : 43px;
+    transform   : rotate(-31deg);
+}
+
+.lefthair4 {
+    position    : absolute;
+    top         : 22%;
+    left        : 21%;
+    border-left : 4px solid black;
+    width       : 15px;
+    height      : 47px;
+    transform   : rotate(-25deg);
+}
+
+.head4pre {
+    position  : absolute;
+    top       : -72%;
+    left      : -21%;
+    width     : 253px;
+    height    : 254px;
+    transform : rotate(-29deg);
+    overflow  : hidden;
+
+}
+
+.head4 {
+    position                   : absolute;
+    top                        : 30%;
+    left                       : 10%;
+    width                      : 222px;
+    height                     : 240px;
+    border                     : 4px solid black;
+    border-radius              : 100%;
+    border-top-right-radius    : 56%;
+    border-top-left-radius     : 55%;
+    border-bottom-right-radius : 0%;
+    border-bottom-left-radius  : 0%;
+    transform                  : rotate(11deg);
+}
+
+.tophairpre1 {
+    position : absolute;
+    top      : -66%;
+    left     : 5%;
+    width    : 100px;
+    height   : 100px;
+    overflow : hidden;
+}
+
+.tophair1 {
+    position      : absolute;
+    top           : 30%;
+    left          : 24%;
+    width         : 87px;
+    height        : 100px;
+    border        : 4px solid black;
+    border-radius : 100%;
+    transform     : rotate(-27deg);
+}
+
+.tophairpre2 {
+    position : absolute;
+    top      : -71%;
+    left     : 21%;
+    width    : 95px;
+    height   : 100px;
+    overflow : hidden;
+
+}
+
+.tophair2 {
+    position      : absolute;
+    top           : 39%;
+    left          : 18%;
+    width         : 87px;
+    height        : 100px;
+    border        : 4px solid black;
+    border-radius : 100%;
+    transform     : rotate(-14deg);
+}
+
+.head5pre {
+    position : absolute;
+    top      : 1%;
+    left     : 88%;
+    width    : 45px;
+    height   : 38px;
+    overflow : hidden;
+
+}
+
+.head5 {
+    position      : absolute;
+    top           : -13%;
+    left          : -38%;
+    width         : 35px;
+    height        : 35px;
+    border        : 3.5px solid black;
+    border-radius : 100%;
+}
