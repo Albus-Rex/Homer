@@ -18,7 +18,7 @@ jobs:
           username: ${{secrets.SSH_USERNAME}}
           envs: DEPLOYPATH
           script: |
-            cd repositories/Davidgarxa
+            cd repositories/Homer
             git pull origin
             echo "Update repo"
             echo "$DEPLOYPATH"          
